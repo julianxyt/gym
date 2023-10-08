@@ -14,7 +14,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = '1Sj0V5vqf2LNmoHRGCjU3vcVuPBDR-z_pG8BCaHBrxgs'
-SAMPLE_RANGE_NAME = 'A1:J500'
+SAMPLE_RANGE_NAME = 'GymReps'
 
 def getGymData(values):
     headers = values.pop(0)
@@ -24,7 +24,10 @@ def getGymData(values):
         if row:
             print(row)
             dates.append(row.pop(0))
+    print(dates)
     print(dates[::2])
+    print(len(dates))
+
 
 def getGymData1(values):
     mylist=['a','b','c','d','e','f','g','h','i']
